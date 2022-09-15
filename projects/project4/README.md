@@ -25,7 +25,7 @@ TODO: replace by quest name and exercice number
 - Split the data in train and test (TODO: choose the year - once the data is delivered)
 - Your first priority is to build a dataset without leakage !!! NO LEAKAGE !!! 
 
-**"No leakage" small guide:**
+**"No leakage" [intro](https://en.wikipedia.org/wiki/Leakage_(machine_learning)) and small guide:**
 We assume it is day D and we want to take a position on the next h days on the next day. The position starts on day D+1 (included). To decide wether we take a short or long position the return between day D+1 and D+2 is computed and used as a target. Finally, as features on day contain information until day D 11:59pm, target need to be shifted. As a result, the final dataframe schema is: 
 
 
